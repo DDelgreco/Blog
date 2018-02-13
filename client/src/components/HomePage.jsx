@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import BlogMap from "./BlogMap";
+import NewBlog from "./NewBlog";
 
 class HomePage extends Component {
   constructor(props) {
@@ -35,6 +36,7 @@ class HomePage extends Component {
             </div>
           </div>
         </div>
+        <NewBlog handleNewBlog={content=> this.handleNewBlog(content)} />
         <BlogMap list={this.state.blogArray} />
       </div>
     );

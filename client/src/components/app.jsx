@@ -14,7 +14,6 @@ class App extends Component {
           <Switch>
             <Route exact path="/" component={HomePage} />
             <Route exact path="/:id" component={SingleBlog} />
-            {/* <Route exact path="/:id" component={SingleBlog} /> */}
           </Switch>
         </Fragment>
       </Router>

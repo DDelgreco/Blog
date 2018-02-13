@@ -5,7 +5,7 @@ export default class SingleBlog extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      Blog: {}
+      blog: {}
     };
   }
   componentDidMount() {
@@ -20,12 +20,17 @@ export default class SingleBlog extends Component {
   render() {
     let blog = this.state.blog;
     return (
-      <div className="border p-3 m-1 w-75 mx-auto" key={blog.id}>
+      <div className="border border-dark bg-white rounded p-5 m-3 w-75 mx-auto" key={blog.id}>
+      <img
+            className="w-50 h-50 "
+            src="https://wallpapercave.com/wp/uhl1zmX.jpg"
+            alt=""
+          />
         <h1>{blog.title}</h1>
         <p>{blog.content}</p>
-        <p>{blog._created}</p>
-        <Link className="btn btn-primary" to={`/`}>
-          Back to List
+        <p className="text-right text-muted" >{blog._created}</p>
+        <Link className="btn btn-outline-primary w-100" to={`/`}>
+          Back to Blog Posts
         </Link>
       </div>
     );
