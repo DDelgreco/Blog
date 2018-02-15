@@ -9,7 +9,7 @@ class NewBlog extends Component {
   }
   handleSubmit(event) {
     event.preventDefault();
-    this.props.handleNewMention(this.state.content);
+    this.props(this.state.content);
   }
   handleChange(value) {
     this.setState({ content: value });

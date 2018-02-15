@@ -23,14 +23,14 @@ class HomePage extends Component {
     return (
       <div className="container bg-">
         <div>
-          <div className="card card-inverse">
+          <div className="jumbotron jumbotron-fluid">
             <img
               className="card-img w-100"
-              src="https://www.ukfestivalguides.com/content/img/crowd_bkg_long_black.jpg"
+              src=""
               alt=""
             />
             <div className="card-img-overlay">
-              <h1 className="d-block text-white text-center display-3">
+              <h1 className="text-center display-2">
                 I'll Play Myself Out
               </h1>
             </div>
